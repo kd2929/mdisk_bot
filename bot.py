@@ -16,11 +16,10 @@ API_ID = environ.get('API_ID')
 API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN')
 MDISK_API = environ.get('MDISK_API')
-DOODSTREAM_API_KEY = environ.get('DOODSTREAM_API_KEY')
 API_KEY = environ.get('API_KEY')
 CHANNEL = environ.get('CHANNEL')
 HOWTO = environ.get('HOWTO')
-bot = Client('Doodstream bot',
+bot = Client('Mdisk bot',
              api_id=API_ID,
              api_hash=API_HASH,
              bot_token=BOT_TOKEN,
@@ -32,13 +31,13 @@ bot = Client('Doodstream bot',
 async def start(bot, message):
     await message.reply(
         f"**Hey, {message.chat.first_name}!**\n\n"
-        "**I am a Mdisk/Doodstream post convertor bot and i am able to upload all direct links to Mdisk/Doodstream,just send me links or full post... \n Join my Group @ComicBank**")
+        "**I am a Mdisk post convertor bot and i am able to upload all direct links to Mdisk ,just send me links or full post... \n Join my Group @ComicBank**")
 
 @bot.on_message(filters.command('help') & filters.private)
 async def start(bot, message):
     await message.reply(
         f"**Hello, {message.chat.first_name}!**\n\n"
-        "**If you send post which had Mdisk/Doodstream Links, texts & images... Than I'll convert & replace all Mdisk/Doodstream links with your Mdisk/Doodstream links \nMessage me @kamdev07 For more help-**")
+        "**If you send post which had Mdisk Links, texts & images... Than I'll convert & replace all Mdisk links with your Mdisk/Doodstream links \nMessage me @kamdev07 For more help-**")
 
 @bot.on_message(filters.command('support') & filters.private)
 async def start(bot, message):
@@ -82,21 +81,7 @@ async def Doodstream_up(links):
         #links = urlopen(links).geturl()
         unshortener = UnshortenIt()
         links = unshortener.unshorten(links)
-    if ('dood'in links ):
-        title_new = urlparse(links)
-        title_new = os.path.basename(title_new.path)
-        title_Doodstream = '@' + CHANNEL + title_new
-        res = requests.get(
-             f'https://doodapi.com/api/upload/url?key={DOODSTREAM_API_KEY}&url={links}&new_title={title_Doodstream}')
-         
-        data = res.json()
-        data = dict(data)
-        print(data)
-        v_id = data['result']['filecode']
-        #bot.delete_messages(con)
-        v_url = 'https://dood.ws/d/' + v_id
-
-
+    
     if ('entertainvideo' in links or 'mdisk' in links):
         url = 'https://diskuploader.mypowerdisk.com/v1/tp/cp'
         param = {'token': MDISK_API,'link': links}
@@ -105,20 +90,6 @@ async def Doodstream_up(links):
         data = dict(data)
         v_url = data['sharelink']
 
-
-
-    
-    
-    
-    url = 'https://droplink.co/api'
-    params = {'api': API_KEY, 'url': v_url}
-    
-    async with aiohttp.ClientSession() as session:
-        async with session.get(url, params=params, raise_for_status=True) as response:
-            data = await response.json()
-            v_url =  data["shortenedUrl"]
-    #s = Shortener(api_key=BITLY_KEY)
-    #v_url = s.bitly.short(v_url)
     return (v_url)
 
 
