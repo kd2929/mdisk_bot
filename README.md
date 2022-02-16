@@ -24,9 +24,7 @@ Upload on Doodstream or Mdisk by Url, File and also by direct forward post from 
 - `API_ID`: Get this value from [telgram.org](https://my.telegram.org/apps) Or By Telegram Bot [TgApiextractorBot](https://telegram.dog/TgApiextractorBot)
 - `API_HASH`: Get this value from [telgram.org](https://my.telegram.org/apps)
 - `MDISK_API`: Create [Mdisk](https://t.me/VideoToolMoneyTreebot) account then get this value from [Droplink API](https://Droplinks.co/member/tools/api)
-- `DOODSTREAM_API_KEY`: Create [Doodstream](https://doodstream.com/join/s3s3m45tculn) account then get this value from [Doodstream API](https://doodstream.com/api-docs)
-- `API_KEY`: Create [Droplink](https://Droplinks.co/) account then get this value from [Mdisk Api](https://t.me/VideoToolMoneyTreebot)
-- `HOWTO`: Your "How to Download from Droplink" video link
+- `HOWTO`: Your "How to Download from Mdisk" video link
 
 ##### Credit
 
