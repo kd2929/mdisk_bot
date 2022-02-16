@@ -1,15 +1,12 @@
 {
-    "name": "mdisk dood droplink bot",
-    "description": "Upload on Mdisk/Doodstream...",
+    "name": "mdisk bot",
+    "description": "Upload on Mdisk",
     "keywords": [
         "telegram",
-        "Doodstream",
-        "shortner",
-        "mdisk",
-        "droplink"
+        "mdisk"
     ],
-    "website": "https://github.com/Amul-jat/mdisk-dood-droplink-bot",
-    "repository": "https://github.com/Amul-jat/mdisk-dood-droplink-bot",
+    "website": "https://github.com/Amul-jat/mdisk_bot",
+    "repository": "https://github.com/Amul-jat/mdisk_bot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token (must add)",
@@ -37,11 +34,11 @@
         },
         "CHANNEL": {
             "description": "Enter your telegram channel Username (must change and without @)",
-            "value": "Desi_bhabhi_Aunty_Hot_video"
+            "value": "Savita_bhabhi_backup"
         },
         "HOWTO": {
             "description": "Your 'How to Download from Droplink' video link",
-            "value": "Desi_Bhabhi_Aunty_hot_Video/80"
+            "value": "https://youtu.be/x5VDDVO6xi0"
         }
     },
     "addons": [],
