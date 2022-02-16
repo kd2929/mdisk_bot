@@ -1,4 +1,4 @@
-# Doodstream/MDisk-Droplink Uploader Bot 🔥
+# Doodstream/MDisk Uploader Bot 🔥
 
 Upload on Doodstream or Mdisk by Url, File and also by direct forward post from other channel...
 
