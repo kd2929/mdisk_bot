@@ -5,8 +5,8 @@
         "telegram",
         "mdisk"
     ],
-    "website": "https://github.com/Amul-jat/mdisk_bot",
-    "repository": "https://github.com/Amul-jat/mdisk_bot",
+    "website": "https://github.com/kd2929/mdisk_bot",
+    "repository": "https://github.com/kd2929/mdisk_bot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token (must add)",
@@ -21,7 +21,7 @@
             "value": "ca991bfa07a6ac45e6d5f374c84ab05c"
         },
         "MDISK_API": {
-            "description": "Get this from https://t.me/VideoToolMoneyTreebot (must change)",
+            "description": "Get this from https://t.me/kdji0507(must change)",
             "value": "LaPZD1jIR55KygNxkP8e"
         },
         "CHANNEL": {
